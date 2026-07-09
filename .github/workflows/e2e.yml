@@ -25,7 +25,7 @@ jobs:
         run: mkdir -p testResult
 
       - name: Run Postman Collection
-        run: newman run "https://api.postman.com/collections/7060916-23133535-cad5-464f-a99d-88402f754edf?apikey=${{ secrets.POSTMAN_API_KEY }}" -r cli,htmlextra --reporter-htmlextra-export testResult/htmlreport.html
+        run: newman run "https://api.postman.com/collections/7060916-74068a26-c04b-42dc-a19d-efdf083ce3f8?apikey=${{ secrets.POSTMAN_API_KEY }}" -r cli,htmlextra --reporter-htmlextra-export testResult/htmlreport.html
 
       - name: Upload Test Results
         uses: actions/upload-artifact@v4
