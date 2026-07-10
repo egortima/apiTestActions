@@ -1,4 +1,4 @@
-name: Run e2e with properties
+name: Run e2e with properties 
 
 on:
   workflow_dispatch:
